@@ -109,7 +109,7 @@ header a:hover{
 }
 
 #que-hacemos{
-    background-color: rgb(30,30,30);
+    background-color: rgb(33, 164, 252);
     color: white;
     text-align: center;
 }
@@ -180,7 +180,7 @@ header a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30,30,30);
+    background-color: rgb(33, 164, 252);
     color: white;
     height: 80vh;
 }
