@@ -106,11 +106,10 @@ header a:hover{
 }
 
 #que-hacemos{
-<<<<<<< HEAD
+
     background-color: rgb(33, 164, 252);
-=======
+
     background-color: #d3e4f5;
->>>>>>> c1e809c (Colores, wave y disenio)
     color: white;
     text-align: center;
 }
@@ -184,11 +183,11 @@ header a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-<<<<<<< HEAD
+
     background-color: rgb(33, 164, 252);
-=======
+
     background-color: #d3e4f5;
->>>>>>> c1e809c (Colores, wave y disenio)
+
     color: white;
     height: 80vh;
 }
