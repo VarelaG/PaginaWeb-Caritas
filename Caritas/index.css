@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.wave-header{
+    width: 100%;
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+}
 
 .logo-wrapper {
     display: flex;
@@ -109,6 +118,16 @@ header a:hover{
     text-shadow: 10px 10px 10px rgba(0, 0, 0,0.7 );
 }
 
+
+
+#ultima .container{
+    padding: 130px 40px;
+}
+
+#ultima {
+    background-color: #114372;
+}
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
@@ -187,8 +206,6 @@ img {
 }
 
 #que-hacemos{
-    background-color: rgb(33, 164, 252);
-    background-color: #d3e4f5;
     color: white;
     text-align: center;
 }
@@ -198,6 +215,7 @@ img {
 }
 
 #que-hacemos h2{
+    color: #114372;
     text-shadow: 10px 10px 15px rgba(0, 0, 0,0.5 );
     margin-top: 0;
     font-size: 3.2em;
