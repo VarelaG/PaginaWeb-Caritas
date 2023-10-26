@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 15%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -41,7 +53,7 @@ button:hover{
 .color-acento{ color:rgb(41, 5, 241); }
 
 header{
-    background-color: rgb(245,245,245);
+    background-color: #fefefe;
     
 }
 
@@ -84,7 +96,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image:url("media/ninioss.jpg");
+    background-image:url("media/DSC_0425.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -92,12 +104,81 @@ header a:hover{
 
 
 #hero h1{
+    margin-top: 11%;
     color: white;
-    text-shadow: 10px 10px 15px rgba(0, 0, 0, );
+    text-shadow: 10px 10px 10px rgba(0, 0, 0,0.7 );
 }
 
-#hero button{
-    font-size: 1.75em;
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre las fotos */
+}
+
+.photo {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.photo-grid {
+    display: flex;
+    gap: 10px; /* Espacio entre las fotos */
+}
+
+.areas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ajusta la altura total del mapa */
+}
+
+.area-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ajusta la altura total del contenedor */
+}
+
+.area {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    background-color: rgb(41, 5, 241);
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
 #quienes-somos .container{
@@ -106,9 +187,7 @@ header a:hover{
 }
 
 #que-hacemos{
-
     background-color: rgb(33, 164, 252);
-
     background-color: #d3e4f5;
     color: white;
     text-align: center;
@@ -266,7 +345,7 @@ footer .container{
         background-size: cover;
         background-position: center center;
         height: 500px;
-        width: 400px; 
+        width: 400px;
     }
 
     #que-hacemos .programas{
@@ -358,5 +437,3 @@ footer .container{
         background-position-x: calc(100vw - 800px);
     }
 }
-
-
