@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Encabezado de la página -->
+</head>
+<body>
+<h1>Crear Evento</h1>
+<form th:action="@{/events}" th:object="${event}" method="post">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" name="name" th:field="*{name}" required><br>
+
+  <label for="dateTime">Fecha y Hora:</label>
+  <input type="datetime-local" id="dateTime" name="dateTime" th:field="*{startTime}" required><br>
+
+  <button type="submit">Guardar Evento</button>
+</form>
+</body>
+</html>

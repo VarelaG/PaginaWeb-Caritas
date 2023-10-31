@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva Publicación</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/media/caritas-argentina.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Cariatas
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/admin/home}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/admin/publicacion/new}">Nueva Publicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       th:href="@{/admin/eventos/new}">Nuevo evento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/admin/donantes/detalle?cuentaId=1}">Donantes</a>
+                </li>
+            </ul>
+
+        </div>
+        <form action="#" th:action="@{/admin/login}" th:method="post" class="d-flex">
+            <input class="btn btn-warning form-control me-2" type="submit" value="Cerrar sesión"
+                   onclick="return confirm('¿Desea cerrar sesión?');">
+        </form>
+
+    </div></nav>
+
+<div class="container mt-4">
+    <div class="card card-sm"> <!-- Utilizamos la clase card-sm para hacerla más pequeña -->
+        <div class="card-header">
+            <h5 class="card-title">Nueva Publicación</h5>
+        </div>
+        <div class="card-body">
+            <form th:action="@{/admin/publicacion}" th:object="${publicacion}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" th:field="*{fecha}" class="form-control" required="required" />
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2" for="imagen"> Imagen</label>
+                    <input type="file" name="file" class="form-control form-control-sm col-md-6" id="imagen">
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" th:field="*{titulo}" class="form-control" required="required" />
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" th:field="*{descripcion}" class="form-control" required="required"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
