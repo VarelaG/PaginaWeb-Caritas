@@ -89,6 +89,7 @@ button:hover{
 
 header{
     background-color: #fefefe;
+    z-index: 1000;
     
 }
 
@@ -120,9 +121,15 @@ header a{
     color: black;
 }
 
+.donar-button{
+    color:#E51742;
+}
+
 header a:hover{
     color: rgb(41, 5, 241);
 }
+
+
 
 #hero{
     display: flex;
@@ -181,24 +188,32 @@ header a:hover{
     font-size: 14px;
 }
 
-.areas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
+
+#areas-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.area-container {
+.left-section,
+.right-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
 }
 
+iframe {
+    margin: 0 auto;
+    display: block;
+    margin-top: 12%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
 .area {
-    width: calc(20% - 10px);
+    width: 60%;
     height: 100px;
     margin: 5px;
     text-align: center;
@@ -206,8 +221,40 @@ header a:hover{
     color: #fff;
     background-color: #E51742;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cuadro {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cuadro a {
+    margin: 4%;
+    text-decoration: none;
+    color:white;
+    display: block;
+    position: relative;
+}
+
+.cuadro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cuadro:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+.cuadro p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #que-hacemos{
@@ -282,7 +329,7 @@ footer p{
 }
 
 footer .container{
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -290,6 +337,10 @@ footer .container{
 
 footer .button {
     color: #E51742;
+}
+
+footer .donate-button {
+    transform: translateY(-20px);
 }
 
 
