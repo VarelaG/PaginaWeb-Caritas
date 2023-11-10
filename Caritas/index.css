@@ -12,8 +12,6 @@
 
 
 
-
-
 *{
     box-sizing: border-box;
 }
@@ -259,13 +257,19 @@ iframe {
     transform: translate(-50%, -50%);
 }
 
+
 #que-hacemos{
-    color: white;
+    background-color: #CDDBE8;
+    color: black;
     text-align: center;
 }
 
+#que-hacemos h3{
+    color: white;
+}
+
 #que-hacemos .container{
-    padding: 350px 12px;
+    padding: 100px 12px;
     padding-top: 100px;
 }
 
@@ -318,6 +322,38 @@ iframe {
     ,url("media/DSC_0042.JPG");
 
 }
+
+
+.image-text-section {
+    background-color: #ffffff;
+    padding: 10%;
+    
+}
+
+.image-text-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    max-width: 60%;
+}
+
+
+.text-container h2 {
+    font-size: 2em;
+}
+
+.text-container p {
+    font-size: 1.2em;
+}
+
 
 
 footer{
@@ -396,7 +432,7 @@ footer .donate-button {
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
-        background-color: #E51742;
+        background-color: #ffffff;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
 
