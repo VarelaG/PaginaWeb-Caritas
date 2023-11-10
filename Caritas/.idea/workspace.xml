@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0e57900-56e7-4824-b2ad-6b7da7c78f3d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XMqBioVsNrXOO9sdjC7Mzw6rGS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gabi/OneDrive/Escritorio/Caritas/Caritas/src/main/resources/templates/admin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "a129775d9d7e16b1433604c3fc7ccb1d"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\templates\admin" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\templates" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\java\com\ppyl\Caritas\config" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\static\css" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\templates" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\static\media" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\static" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources\templates\" />
+      <recent name="C:\Users\gabi\OneDrive\Escritorio\Caritas\Caritas\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ppyl.Caritas.controller" />
+      <recent name="com.ppyl.Caritas.config" />
+      <recent name="com.ppyl.Caritas.service" />
+      <recent name="com.ppyl.Caritas.repository" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CaritasApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Caritas" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ppyl.Caritas.CaritasApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0e57900-56e7-4824-b2ad-6b7da7c78f3d" name="Changes" comment="" />
+      <created>1698449162885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698449162885</updated>
+      <workItem from="1698449164319" duration="7769000" />
+      <workItem from="1698507367408" duration="8634000" />
+      <workItem from="1698529279634" duration="732000" />
+      <workItem from="1698530561356" duration="9761000" />
+      <workItem from="1698587528479" duration="11259000" />
+      <workItem from="1698602159683" duration="13348000" />
+      <workItem from="1698634716125" duration="1243000" />
+      <workItem from="1698667530458" duration="7706000" />
+      <workItem from="1698681046435" duration="455000" />
+      <workItem from="1698694028061" duration="29000" />
+      <workItem from="1698701022603" duration="808000" />
+      <workItem from="1698711381908" duration="3918000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Caritas/src/main/java/com/ppyl/Caritas/service/PublicacionServiceImp.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Caritas/src/main/java/com/ppyl/Caritas/service/PublicacionServiceImp.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Caritas/src/main/java/com/ppyl/Caritas/service/PublicacionServiceImp.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Caritas/src/main/java/com/ppyl/Caritas/service/PublicacionServiceImp.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
