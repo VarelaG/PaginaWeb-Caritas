@@ -1,16 +1,14 @@
 @font-face {
     font-family: 'Gotham';
-    src: url(Fonts/GothamMedium.ttf) format('truetype');
+    src: url(../../../../../../Fonts/GothamMedium.ttf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url(Fonts/GothamBold.ttf) format('truetype');
+    src: url(../../../../../../Fonts/GothamBold.ttf) format('truetype');
     font-weight: bold;
 }
-
-
 
 
 
@@ -34,9 +32,9 @@ svg{
 }
 
 .logo-img {
-    width: 15%; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Para mantener la proporción */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    width: 15%;
+    height: auto;
+    margin-right: 10px;
 }
 
 html{
@@ -71,8 +69,10 @@ button{
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: rgb(35, 90, 243);
+    background-color:#E51742;
 }
+
+
 
 button:hover{
     background-color: rgb(35, 90, 243);
@@ -87,6 +87,7 @@ button:hover{
 
 header{
     background-color: #fefefe;
+    z-index: 1000;
     
 }
 
@@ -116,11 +117,18 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0,0.3 );
+}
+
+.donar-button{
+    color:#E51742;
 }
 
 header a:hover{
     color: rgb(41, 5, 241);
 }
+
+
 
 #hero{
     display: flex;
@@ -129,7 +137,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image:url("../media/DSC_0425.JPG");
+    background-image:url("../../../../../../media/DSC_0425.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -152,90 +160,117 @@ header a:hover{
     background-color: #114372;
 }
 
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 10px; /* Espacio entre las fotos */
-}
-
-.photo {
-    position: relative;
-}
-
-img {
+#ultima .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: auto;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#ultima h2, #ultima p{
+    color: white;
+}
+
+.block {
+    width: 22%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.block h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.block p {
+    font-size: 14px;
+}
+
+
+#areas-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.left-section,
+.right-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    color: #fff; /* Color del texto */
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.photo:hover .overlay {
-    opacity: 1;
-}
-
-.overlay a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.photo-grid {
-    display: flex;
-    gap: 10px; /* Espacio entre las fotos */
-}
-
-.areas {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Ajusta la altura total del mapa */
 }
 
-.area-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 400px; /* Ajusta la altura total del contenedor */
+iframe {
+    margin: 0 auto;
+    display: block;
+    margin-top: 12%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .area {
-    width: 100px;
+    width: 60%;
     height: 100px;
     margin: 5px;
     text-align: center;
     line-height: 100px;
     color: #fff;
-    background-color: rgb(41, 5, 241);
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+    background-color: #E51742;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-#quienes-somos .container{
+.cuadro {
     text-align: center;
-    padding: 200px 12px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
+
+.cuadro a {
+    margin: 4%;
+    text-decoration: none;
+    color:white;
+    display: block;
+    position: relative;
+}
+
+.cuadro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cuadro:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+.cuadro p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 #que-hacemos{
-    color: white;
+    background-color: #CDDBE8;
+    color: black;
     text-align: center;
+}
+
+#que-hacemos h3{
+    color: white;
 }
 
 #que-hacemos .container{
-    padding: 150px 12px;
+    padding: 100px 12px;
+    padding-top: 100px;
 }
 
 #que-hacemos h2{
@@ -265,7 +300,7 @@ img {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../media/carta1.jpg");
+    ,url("../../../../../../media/DSC_0016.JPG");
 
 }
 
@@ -275,7 +310,7 @@ img {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../media/carta2.jpg");
+    ,url("../../../../../../media/DSC_0108.JPG");
 }
 
 .carta:nth-child(3){
@@ -284,64 +319,68 @@ img {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../media/carta3.jpg");
+    ,url("../../../../../../media/DSC_0042.JPG");
 
 }
 
-#como-participar .container{
-    text-align: center;
-    padding: 250px 12px;
+
+.image-text-section {
+    background-color: #ffffff;
+    padding: 10%;
+    
 }
 
-#como-participar li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-#final{
+.image-text-section .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+}
 
-    background-color: rgb(33, 164, 252);
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
 
-    background-color: #d3e4f5;
-
-    color: white;
-    height: 80vh;
+.text-container {
+    max-width: 60%;
 }
 
 
-
-#final h2{
-    text-shadow: 10px 10px 15px rgba(0, 0, 0,0.5 );
-    font-size: 9vw;
+.text-container h2 {
+    font-size: 2em;
 }
 
-
-#final button{
-    font-size: 5vw;
+.text-container p {
+    font-size: 1.2em;
 }
+
 
 
 footer{
-    background-color: rgb(230,230,230);
+    background-color: #114372;
 }
 
 footer p{
     margin: 0;
-    padding: 12px;
+    padding: 8px;
     color: rgb(100,100,100);
 }
 
 footer .container{
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+
+footer .button {
+    color: #E51742;
+}
+
+footer .donate-button {
+    transform: translateY(-20px);
+}
+
 
 @media (min-width: 850px){
     header{
@@ -364,33 +403,6 @@ footer .container{
         font-size: 5em;
     }
 
-    #quienes-somos .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #quienes-somos .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #quienes-somos h2{
-        margin-top: 0px;
-    }
-
-    #quienes-somos .img-container{
-        background-image: url("../media/donacion.webp");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px;
-    }
-
     #que-hacemos .programas{
         display: flex;
         justify-content: center;
@@ -409,12 +421,18 @@ footer .container{
         margin-top: 0;
     }
 
+    #que-hacemos .carta p {
+        margin-top: 25%;
+    }
+
+
+
     #que-hacemos .carta{
         padding: 50px ;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
-        background-color: rgb(35, 90, 243);
+        background-color: #ffffff;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
 
@@ -424,7 +442,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/carta1-crop.jpg");
+        ,url("../../../../../../media/DSC_0016-crop.png");
 
     }
 
@@ -434,7 +452,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/carta2-crop.jpg");
+        ,url("../../../../../../media/DSC_0108-crop.JPG");
     }
 
     .carta:nth-child(3){
@@ -443,35 +461,8 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/carta3-crop.jpg");
+        ,url("../../../../../../media/DSC_0042-crop.JPG");
 
-    }
-
-    #como-participar{
-        background-image: url("../media/mercedes_lujan_2.jpg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #como-participar .container{
-        text-align: initial;
-    }
-
-    #como-participar ul{
-        margin-left: 100px;
-    }
-
-    #final h2{
-        font-size: 5em;
-    }
-
-    #final button{
-        font-size: 2em;
-    }
-
-    footer .container{
-        justify-content: flex-end;
     }
 }
 

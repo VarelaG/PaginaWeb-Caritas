@@ -30,6 +30,11 @@ public class IndexController {
         model.addAttribute("publicaciones", publicacionesRecientes);
         return "index";
     }
+
+    @GetMapping("quienes-somos")
+    public String getPublicacionesRecientes() {
+        return "quienes-somos";
+    }
 }
 
 

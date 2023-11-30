@@ -86,6 +86,7 @@
                     <div class="card-footer">
                         <small class="text-muted" th:text="${publicacion.fecha}">Fecha</small>
                         <a th:href="@{/admin/publicacion/delete/{id}(id=${publicacion.getId()})}">Borrar</a>
+                        <a th:href="@{/admin/publicacion/editar/{id}(id=${publicacion.getId()})}">Editar</a>
 
                     </div>
                 </div>

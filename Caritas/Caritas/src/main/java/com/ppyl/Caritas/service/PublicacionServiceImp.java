@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +34,7 @@ public class PublicacionServiceImp implements IPublicacionService, UserDetailsSe
 
     @Override
     public void create(Publicacion publicacion) {
+        publicacion.setFecha(LocalDate.now());
         repository.save(publicacion);
     }
 

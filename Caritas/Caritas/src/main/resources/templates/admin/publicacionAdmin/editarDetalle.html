@@ -45,21 +45,23 @@
 <div class="container mt-4">
     <div class="card card-sm"> <!-- Utilizamos la clase card-sm para hacerla más pequeña -->
         <div class="card-header">
-            <h5 class="card-title">Nueva Publicación</h5>
+            <h5 class="card-title">Editar Publicación</h5>
         </div>
         <div class="card-body">
-            <form th:action="@{/admin/publicacion}" th:object="${publicacion}" method="post" enctype="multipart/form-data">
+            <form th:action="@{/admin/publicacion/editar}" th:object="${publicacionDetalle}" method="post" enctype="multipart/form-data">
+                <input type="hidden" th:field="*{id}" th:value="${publicacionDetalle.getId()}">
+
                 <div class="form-group row">
                     <label class="col-md-2" for="imagen"> Imagen</label>
                     <input type="file" name="file" class="form-control form-control-sm col-md-6" id="imagen">
                 </div>
                 <div class="form-group">
                     <label for="titulo">Título:</label>
-                    <input type="text" id="titulo" th:field="*{titulo}" class="form-control" required="required" />
+                    <input type="text" id="titulo" th:field="*{titulo}" th:value="${publicacionDetalle.getTitulo()}" class="form-control" required="required" />
                 </div>
                 <div class="form-group">
                     <label for="descripcion">Descripción:</label>
-                    <textarea id="descripcion" th:field="*{descripcion}" class="form-control" required="required"></textarea>
+                    <textarea id="descripcion" th:field="*{descripcion}" th:value="${publicacionDetalle.getDescripcion()}" class="form-control" required="required"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>

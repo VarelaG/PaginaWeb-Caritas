@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Gotham';
-    src: url(Fonts/GothamMedium.ttf) format('truetype');
+    src: url(../../../../../../Fonts/GothamMedium.ttf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url(Fonts/GothamBold.ttf) format('truetype');
+    src: url(../../../../../../Fonts/GothamBold.ttf) format('truetype');
     font-weight: bold;
 }
 

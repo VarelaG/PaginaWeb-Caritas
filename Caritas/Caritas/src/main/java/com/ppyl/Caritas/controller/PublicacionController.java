@@ -63,10 +63,16 @@ public class PublicacionController {
 
 
     @GetMapping("/detalle/{id}")
-        public String detalle(@PathVariable("id") Long id,Model model) {
-            Publicacion publicacion =publicacionService.findById(id);
-            model.addAttribute("publicacionDetalle",publicacion);
-            return "/admin/publicacion/detalle";
-        }
+    public String detalle(@PathVariable("id") Long id,Model model) {
+        Publicacion publicacion =publicacionService.findById(id);
+        model.addAttribute("publicacionDetalle",publicacion);
+        return "/admin/publicacion/detalle";
+    }
 
+    @GetMapping("/editar/{id}")
+    public String editar(@PathVariable("id") Long id,Model model) {
+        Publicacion publicacion =publicacionService.findById(id);
+        model.addAttribute("publicacionDetalle",publicacion);
+        return "/admin/publicacion/detalle";
+    }
 }

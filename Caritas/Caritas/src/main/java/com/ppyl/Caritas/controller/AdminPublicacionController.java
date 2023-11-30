@@ -31,9 +31,9 @@ public class AdminPublicacionController {
 
 
     @PostMapping
-    public String create(@ModelAttribute Publicacion publicacion, Model model, @RequestParam("file") MultipartFile imagen) {
+    public String create(@ModelAttribute Publicacion publicacion, @RequestParam("file") MultipartFile imagen) {
         if (!imagen.isEmpty()) {
-            String rutaAbsoluta = "C:\\Users\\gabi\\OneDrive\\Escritorio\\Caritas\\Caritas\\src\\main\\resources\\static\\media";
+            String rutaAbsoluta = "C:\\Users\\juanm\\OneDrive\\Escritorio\\PaginaWeb-Caritas\\Caritas\\Caritas\\src\\main\\resources\\static\\media";
 
             try {
                 byte[] bytesImg = imagen.getBytes();
@@ -57,10 +57,36 @@ public class AdminPublicacionController {
 
 
     @GetMapping("/detalle/{id}")
-        public String detalle(@PathVariable("id") Long id,Model model) {
-            Publicacion publicacion =publicacionService.findById(id);
-            model.addAttribute("publicacionDetalle",publicacion);
-            return "/admin/publicacionAdmin/detalle";
+    public String detalle(@PathVariable("id") Long id,Model model) {
+        Publicacion publicacion =publicacionService.findById(id);
+        model.addAttribute("publicacionDetalle",publicacion);
+        return "/admin/publicacionAdmin/detalle";
+    }
+
+    @GetMapping("/editar/{id}")
+    public String editar(@PathVariable("id") Long id,Model model) {
+        Publicacion publicacion =publicacionService.findById(id);
+        model.addAttribute("publicacionDetalle",publicacion);
+        return "/admin/publicacionAdmin/editarDetalle";
+    }
+
+    @PostMapping("/editar")
+    public String editPublicacion(@ModelAttribute Publicacion publicacion, @RequestParam("file") MultipartFile imagen) {
+        if (!imagen.isEmpty()) {
+            String rutaAbsoluta = "C:\\Users\\juanm\\OneDrive\\Escritorio\\PaginaWeb-Caritas\\Caritas\\Caritas\\src\\main\\resources\\static\\media";
+
+            try {
+                byte[] bytesImg = imagen.getBytes();
+                Path rutaCompleta = Paths.get(rutaAbsoluta, imagen.getOriginalFilename());
+                Files.write(rutaCompleta, bytesImg);
+                publicacion.setImagen(imagen.getOriginalFilename());
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+        publicacionService.create(publicacion);
+        return "redirect:/admin/home";
+    }
 
 }
