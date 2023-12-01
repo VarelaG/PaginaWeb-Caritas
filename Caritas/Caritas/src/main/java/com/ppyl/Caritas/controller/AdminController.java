@@ -36,7 +36,7 @@ public class AdminController {
     @GetMapping("/home")
     public String index(Model model) {
         List<Admin> admins = adminService.getAll();
-        model.addAttribute("admin", admins);
+        model.addAttribute("administradores", admins);
         List<Publicacion> publicaciones = publicacionService.getAll();
         model.addAttribute("publicaciones", publicaciones);
         return "admin/home";

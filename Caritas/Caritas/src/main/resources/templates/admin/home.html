@@ -92,6 +92,24 @@
                 </div>
             </div>
         </th:block>
+        <table>
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="admin : ${administradores}">
+                <td th:text="${admin.getNombre()}"></td>
+                <td th:text="${admin.getApellido()}"></td>
+                <td th:text="${admin.getUsername()}"></td>
+                <td><a th:href="@{'/admin/delete/' + ${admin.getId()}}">Eliminar</a></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
